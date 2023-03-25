@@ -11,6 +11,13 @@
 		C004153029CF08FD008AE496 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004152F29CF08FD008AE496 /* ContentView.swift */; };
 		C004153229CF08FE008AE496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C004153129CF08FE008AE496 /* Assets.xcassets */; };
 		C004153529CF08FE008AE496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C004153429CF08FE008AE496 /* Preview Assets.xcassets */; };
+		C004154029CF0981008AE496 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004153F29CF0981008AE496 /* WebService.swift */; };
+		C004154229CF09AE008AE496 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004154129CF09AE008AE496 /* UserModel.swift */; };
+		C004154429CF0F68008AE496 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004154329CF0F68008AE496 /* UserViewModel.swift */; };
+		C004154729CF108F008AE496 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004154629CF108F008AE496 /* Constants.swift */; };
+		C004154929CF1345008AE496 /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004154829CF1345008AE496 /* LocalService.swift */; };
+		C004154B29CF140A008AE496 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = C004154A29CF140A008AE496 /* users.json */; };
+		C004154D29CF1448008AE496 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004154C29CF1448008AE496 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		C004152F29CF08FD008AE496 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C004153129CF08FE008AE496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C004153429CF08FE008AE496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C004153F29CF0981008AE496 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C004154129CF09AE008AE496 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C004154329CF0F68008AE496 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		C004154629CF108F008AE496 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C004154829CF1345008AE496 /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		C004154A29CF140A008AE496 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		C004154C29CF1448008AE496 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,11 @@
 		C004152C29CF08FD008AE496 /* NetworkInterchangable */ = {
 			isa = PBXGroup;
 			children = (
+				C004154A29CF140A008AE496 /* users.json */,
+				C004154529CF1072008AE496 /* Constants */,
+				C004153D29CF091E008AE496 /* ViewModel */,
+				C004153C29CF0914008AE496 /* Service */,
+				C004153B29CF090D008AE496 /* Model */,
 				C004152D29CF08FD008AE496 /* NetworkInterchangableApp.swift */,
 				C004152F29CF08FD008AE496 /* ContentView.swift */,
 				C004153129CF08FE008AE496 /* Assets.xcassets */,
@@ -65,6 +84,40 @@
 				C004153429CF08FE008AE496 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C004153B29CF090D008AE496 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C004154129CF09AE008AE496 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C004153C29CF0914008AE496 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C004153F29CF0981008AE496 /* WebService.swift */,
+				C004154829CF1345008AE496 /* LocalService.swift */,
+				C004154C29CF1448008AE496 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C004153D29CF091E008AE496 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C004154329CF0F68008AE496 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C004154529CF1072008AE496 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C004154629CF108F008AE496 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C004154B29CF140A008AE496 /* users.json in Resources */,
 				C004153529CF08FE008AE496 /* Preview Assets.xcassets in Resources */,
 				C004153229CF08FE008AE496 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C004154029CF0981008AE496 /* WebService.swift in Sources */,
 				C004153029CF08FD008AE496 /* ContentView.swift in Sources */,
+				C004154D29CF1448008AE496 /* NetworkService.swift in Sources */,
+				C004154229CF09AE008AE496 /* UserModel.swift in Sources */,
+				C004154429CF0F68008AE496 /* UserViewModel.swift in Sources */,
 				C004152E29CF08FD008AE496 /* NetworkInterchangableApp.swift in Sources */,
+				C004154929CF1345008AE496 /* LocalService.swift in Sources */,
+				C004154729CF108F008AE496 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
